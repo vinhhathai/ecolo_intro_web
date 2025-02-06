@@ -20,8 +20,12 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            $(".navbar .navbar-brand img").attr("src", "img/ECO.png");
+            $('..navbar .navbar-brand h1').removeClass('sticky-bot shadow-sm');
+ 
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
+            $(".navbar .navbar-brand img").attr("src", "img/ava.png");
         }
     });
 
