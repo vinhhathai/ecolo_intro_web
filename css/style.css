@@ -87,7 +87,7 @@
 /*** Topbar Start ***/
 /* CSS cho news-card */
 .news-card {
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -195,10 +195,10 @@
 }
 
 .sticky-top.navbar-light .navbar-brand h1 {
-    color: black;
+    color: #020D43;
 }
 .sticky-bot {
-    color: white;
+    color: #ffffff;
 }
 
 .navbar .dropdown-toggle::after {
@@ -549,7 +549,7 @@
 }
 
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
 }
 
 @media (max-width: 992px) {
@@ -566,9 +566,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: var(--bs-white);
+    background: var(--bs-#ffffff);
     border-radius: 10px;
     transition: 0.5s;
+    position: relative;
 }
 
 .feature .feature-item:hover {
@@ -595,6 +596,11 @@
 
 .feature .feature-item a.btn {
     transition: 0.5s;
+    position: absolute; /* Đặt nút vào vị trí tuyệt đối */
+    bottom: 10px; /* Khoảng cách từ dưới lên */
+    left: 0; /* Đặt nó ở góc trái */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha (nếu cần) */
+    text-align: center; /* Căn giữa nội dung nút */
 }
 
 .feature .feature-item:hover a.btn:hover {
@@ -641,7 +647,7 @@
     font-size: 30px;
     font-weight: bold;
     background: var(--bs-secondary);
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
     border: 1px solid var(--bs-secondary);
     margin-top: -30px;
     margin-left: -30px;
@@ -689,7 +695,7 @@
 }
 
 .service-item:hover .service-content p {
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
 } 
 
 .service-item .service-btn {
@@ -708,7 +714,7 @@
 }
 
 .service-item:hover .service-btn {
-    background: var(--bs-white);
+    background: var(--bs-#ffffff);
 }
 
 .service-item:hover .service-btn i {
@@ -742,7 +748,7 @@
     border-radius: 50%;
 }
 .service-item {
-    background: white;
+    background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .service-item .service-btn {
@@ -751,7 +757,7 @@
     border-radius: 50%;
 }
 .service-item .service-btn i {
-    color: white;
+    color: #ffffff;
 }
 /*** Service End ***/
 
@@ -846,7 +852,7 @@
     left: 25px;
     border-radius: 10px;
     background: var(--bs-primary);
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
     z-index: 2;
 }
 
@@ -863,7 +869,7 @@
 .team .team-item {
     position: relative;
     overflow: hidden;
-    background: var(--bs-white);
+    background: var(--bs-#ffffff);
     border: 1px solid var(--bs-secondary);
     border-radius: 10px;
 }
@@ -934,7 +940,7 @@
     top: -58px;
     right: 0;
     background: var(--bs-primary);
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
     padding: 5px 30px;
     border-radius: 30px;
     transition: 0.5s;
@@ -942,7 +948,7 @@
 
 .testimonial .owl-nav .owl-prev:hover {
     background: var(--bs-secondary);
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
 }
 
 .testimonial .owl-nav .owl-next {
@@ -950,7 +956,7 @@
     top: -58px;
     right: 88px;
     background: var(--bs-primary);
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
     padding: 5px 30px;
     border-radius: 30px;
     transition: 0.5s;
@@ -958,7 +964,7 @@
 
 .testimonial .owl-nav .owl-next:hover {
     background: var(--bs-secondary);
-    color: var(--bs-white);
+    color: var(--bs-#ffffff);
 }
 
 .testimonial-carousel .owl-dots {
@@ -1011,7 +1017,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--bs-white);
+    background: var(--bs-#ffffff);
 }
 
 @media (max-width: 992px) {
@@ -1052,7 +1058,7 @@
 }
 
 .footer .footer-item .footer-btn a:hover {
-    background: var(--bs-white);
+    background: var(--bs-#ffffff);
 }
 
 .footer .footer-item .footer-btn a:hover i {
