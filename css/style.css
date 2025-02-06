@@ -85,6 +85,80 @@
     border: 1px solid var(--bs-primary);
 }
 /*** Topbar Start ***/
+/* CSS cho news-card */
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%; /* Đảm bảo ảnh không vượt quá khung chứa */
+  height: auto; /* Giữ tỉ lệ ảnh gốc */
+  object-fit: cover; /* Cắt ảnh nếu cần để đảm bảo không bị méo */
+  border-radius: 8px; /* Tùy chỉnh bo góc nếu muốn */
+}
+
+.news-card .card-body {
+    padding: 15px;
+}
+
+.news-card h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.news-card .btn {
+    margin-top: 10px;
+}
+
+
+
+/* CSS cho sidebar */
+
+.sidebar {
+    background-size: cover; /* Hoặc contain nếu muốn toàn bộ ảnh hiển thị */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+.sidebar img {
+    width: 50px; /* Đảm bảo ảnh co giãn theo chiều rộng của phần sidebar */
+    height: 50px; /* Giữ tỷ lệ khung hình gốc */
+    object-fit: cover; /* Cắt ảnh nếu cần để tránh biến dạng */
+    max-width: 300px; /* Giới hạn chiều rộng tối đa nếu cần */
+    border-radius: 8px; /* Làm góc bo tròn nếu muốn */
+  }
+  
+
+.sidebar .list-group-item {
+    border: none;
+    padding: 10px 0;
+}
+
+.sidebar .list-group-item img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.sidebar .list-group-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar .list-group-item a:hover {
+    color: #007bff;
+}
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
@@ -462,7 +536,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url(../img/breadcrumb.jpg);
+    background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url(../img/cover.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -716,7 +790,11 @@
     border: 1px solid rgba(196, 211, 211, 0.9);
     border-radius: 10px;
 }
-
+.product-item img {
+    width: 100%; /* Chiều rộng cố định */
+    height: 400px; /* Chiều cao cố định */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  }
 /*** Products End ***/
 
 /*** Blog Start ***/
