@@ -1,4 +1,21 @@
 
+@font-face {
+    font-family: 'Ganh';
+    src: url('/ecolo/lib/Ganh/Ganh/Ganh-Type-Regular.woff2') format('woff2'),
+         url('/ecolo/lib/Ganh/Ganh/Ganh-Type-Regular.woff') format('woff'),
+         url('/ecolo/lib/Ganh/Ganh/Ganh-Type-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+  
+body, html, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, a {
+    font-family: 'Ganh', sans-serif !important;
+}
+
+  
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
